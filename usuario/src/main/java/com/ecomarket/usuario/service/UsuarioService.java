@@ -41,7 +41,7 @@ public class UsuarioService {
             return usuarioRepository.save(usuarioactualizado);
         }
         else {
-            throw new RuntimeException("Usuario no encontrado");}
+            throw new BadRequestException("Usuario no encontrado");}
 
     }
 }
